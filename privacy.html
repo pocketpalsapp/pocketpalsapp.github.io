@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pocket Pals — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.55; max-width: 40rem; margin: 2rem auto; padding: 0 1.25rem; color: #111; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    .updated { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <h1>Pocket Pals — Privacy Policy</h1>
+  <p class="updated">Last updated September 28, 2026</p>
+
+  <h2>Who we are</h2>
+  <p>Pocket Pals is a texting-practice app. A grown-up sets it up. The learner practices with pretend contacts. Those contacts are not real people, and a message in the app is not sent to anyone’s phone. Operator: Brigham Rindlisbacher. Postal address: 3196 N. 1075 W., Pleasant View, UT 84414. Phone: (512) 547-0202. Email: <a href="mailto:brighamr@gmail.com">brighamr@gmail.com</a>.</p>
+
+  <h2>What stays on the device</h2>
+  <p>Conversations are never sent to us, and they are never copied into family sync. If a grown-up turns on Claude, recent messages go to Anthropic to write the reply. Photos in those messages go to Anthropic only if a separate switch is on. That switch starts off. The learner’s profile photo and the grown-up PIN stay on the device. The PIN is stored as a salted hash in the iOS Keychain on that device. Pocket Pals does not run an account server, and it does not use ads, analytics, or tracking.</p>
+  <p>A grown-up can export a backup of the conversations, contacts, and settings. The app writes that file on the device and opens the share sheet. The file goes only where the grown-up chooses to put it, such as Files, iCloud Drive, AirDrop, or a computer. Pocket Pals does not upload it. The grown-up controls the file after that.</p>
+
+  <h2>Family sync</h2>
+  <p>If you use family sync, Pocket Pals saves one record in a shared database the developer runs (Apple CloudKit public database, container iCloud.com.rindlisbacher.textpractice, record type FamilyConfig, record name family- plus your family code). It is not in your iCloud account. A device joins by fetching that record name. The record still holds the learner’s first name, interests, people, and topics to avoid; each pal’s name, relationship, notes, writing samples, and avatar photo; limits, hours, and reading-aloud settings; a random id for each install and today’s send count; and, for up to a day, a text a grown-up queued. It also holds today’s planned pal texts: the pal’s name, the text, the scheduled time, and the id of the device that planned them. The PIN field in that record is empty. Conversation history is not in it. Memory notes are not in it. The learner’s own profile photo is not in it. Anyone who knows the family code can read that record and can change it. An Apple Account is enough to do both. The developer can also open it in CloudKit Console. Pocket Pals no longer saves the family code as a field on the record, and it removes the old subscriptions that watched that field. Those subscriptions were what woke a closed app. The phones still sync when the app is opened. The family code stays on the device, and in iCloud Keychain, so the phones can build the record name. A learner cannot make information public. The learner’s screens have no control that publishes a conversation, a photo, or a profile.</p>
+
+  <h2>Dictation</h2>
+  <p>When a grown-up dictates into a text field, Pocket Pals uses Apple’s speech recognition. If this iPhone or iPad can recognize speech on the device, the audio stays on the device. If it cannot, dictation still works: Apple processes the audio on Apple’s servers to make the transcript, and the screen says so before you speak. Pocket Pals does not store the recording. If speech recognition is unavailable, the button says so and does not save words that were not recognized.</p>
+
+  <h2>Optional Anthropic replies</h2>
+  <p>Replies are on-device or scripted unless a grown-up saves an Anthropic API key and taps I agree. After that, a Claude request can include: The pal’s name, relationship, and tone. Persona notes about that pal. Writing samples, up to 25 lines. The learner’s name, interests, people, and topics to avoid. Memory notes kept on this device from earlier chats. Up to the last 40 messages in that conversation. Photos the learner attached are included only if a separate switch is on. That switch starts off. When Pocket Pals updates memory notes, the notes so far and up to the last 30 messages. That request does not include photos. When the app suggests a reply, up to the last 8 messages and the pal’s latest message. When the app explains a message, the pal’s name, relationship, and that message’s words. When a pal texts first, the same instructions, plus up to 4 recent messages, and up to 3 recent messages from the pal inside the instructions. A test reply in the contact editor sends the draft pal (name, relationship, notes, writing samples, and tone), the learner’s name and interests, and the sentence the grown-up typed. The request uses the grown-up’s own key and Anthropic’s terms. Pocket Pals does not keep another copy. Turning Claude off, or removing the key, stops further requests. How long Anthropic keeps that text is governed by the grown-up’s Anthropic account, not by Pocket Pals.</p>
+
+  <h2>Who else receives data</h2>
+  <p>Anthropic, when a grown-up turns on Claude, and Apple, as the host of iCloud and CloudKit, are the third parties who receive data under this policy. They protect that data at a level equal to this policy.</p>
+
+  <h2>How long data is kept</h2>
+  <p>On the device: conversations and photos stay until a grown-up deletes them or deletes the app. Memory notes are kept on the device, on each pal, so that pal can remember earlier chats. They are not copied into family sync. They stay until a grown-up clears them, deletes that pal, or deletes the app. The PIN hash and the API key stay in the Keychain until a grown-up changes or removes them. Deleting the app removes the on-device database. A Keychain item can remain on the phone after the app is deleted. The family code is kept on the device and in iCloud Keychain so the phones can find the family record. It stays until a grown-up replaces it. It can still be there after the app is deleted, because iCloud Keychain keeps it.</p>
+  <p>The family record is kept for one purpose: so the grown-up’s setup is the same on each phone that uses the family code. That setup is the learner’s first name, interests, people, and topics to avoid; the pals; the limits and hours; today’s send count; a text a grown-up queued; and today’s planned pal texts. It is kept while the family is using that code. This version has no button that deletes it. Stopping sync does not delete it. Queued texts older than 24 hours are dropped the next time a device syncs. Send counts from earlier days are dropped the next time a device reports today’s count. Today’s planned pal texts are replaced when the next day’s plan is written. Messages sent to Anthropic are kept by Anthropic under the key holder’s account and Anthropic’s terms, not by Pocket Pals. An email about a deletion request is deleted 12 months after the request is closed. A one-line log of the date, the kind of request, and the date it was finished, with no information about the child, is kept for 3 years.</p>
+
+  <h2>How to delete family data</h2>
+  <p>Email <a href="mailto:brighamr@gmail.com">brighamr@gmail.com</a> with the family code. The operator deletes the FamilyConfig record named family- plus that code, and the nudge- record for that code if one is still there, in CloudKit Console within 30 days, and replies to confirm. Once a quarter, the operator also deletes family records that have not been updated for 12 months. After the later private-sync update ships, the operator deletes public family records that are still there 90 days after that release. Deleting the app does not delete the cloud record. A device that still has the family code will write the record again the next time it syncs, until that device stops using the code. Stopping sync does not delete the record.</p>
+
+  <h2>How to revoke consent and refuse further collection</h2>
+  <p>Grown-up Settings, AI, Turn off Claude. That withdraws the Anthropic agreement and stops sending messages and photos, including as a backup when on-device replies are unavailable. Remove API key deletes the key from this device. Send photos to Anthropic can be turned off on its own. Not using family sync means this device stops writing the family record. It does not delete a record that is already there. Email <a href="mailto:brighamr@gmail.com">brighamr@gmail.com</a> to refuse further collection and to ask for the family record to be deleted.</p>
+
+  <h2>Notice to parents</h2>
+  <p>Operator: Brigham Rindlisbacher. Postal address: 3196 N. 1075 W., Pleasant View, UT 84414. Phone: (512) 547-0202. Email: <a href="mailto:brighamr@gmail.com">brighamr@gmail.com</a>. From a child, Pocket Pals can hold, on the device, a name, interests, people, topics to avoid, conversations, and photos. A learner cannot make information public. The learner’s screens have no control that publishes a conversation, a photo, or a profile. If family sync is on, the shared family record described above can include the first name, interests, people, topics to avoid, pal notes, writing samples, avatar photos, a random device id, today’s send count, a queued text, and today’s planned pal texts (the pal’s name, the text, the time, and the planning device’s id). Anyone who knows the family code can read that public record and can change it. It does not include the PIN, the conversations, or memory notes. If a grown-up agrees to Anthropic, a Claude request can include the items listed above. A parent can review the setup in the app, because that is what the family record contains, and can email <a href="mailto:brighamr@gmail.com">brighamr@gmail.com</a> to ask for a copy of the cloud record, to delete it within 30 days, or to refuse any further collection. You can refuse by not agreeing to Anthropic, turning Claude off, and not using family sync. Not using family sync does not by itself delete a record already stored.</p>
+
+  <h2>Contact</h2>
+  <p>Brigham Rindlisbacher, 3196 N. 1075 W., Pleasant View, UT 84414, (512) 547-0202, <a href="mailto:brighamr@gmail.com">brighamr@gmail.com</a></p>
+</body>
+</html>
